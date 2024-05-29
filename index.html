@@ -352,7 +352,7 @@
 </section>
 <!-- FIM Section 6 -->
 
-<!-- Section 7 - *CONTATO* --> 
+<!-- Section 7 - *CONTATO* form-floating  -->  
 <section class="container my-5 p-4" id="contato"> 
 
   <div class="row">
@@ -381,14 +381,18 @@
           <option value="1">WhatsApp</option>
           <option value="2">Email</option>
           <option value="3">Ligação</option>
-        </select>        
+        </select>    
+        <div class="form-floating mb-3">
+          <textarea name="floatingMensagem" class="form-control" id="floatingMensagem" placeholder="Mensagem"> </textarea>
+          <label for="floatingMensagem" class="form-label">Mensagem</label>
+        </div>      
         <div class="form-check">
           <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
           <label class="form-check-label " for="flexCheckDefault">
             Deseja ser avisado sobre os próximos eventos por email?
           </label>
         </div>
-        <button type="button" class="btn btn-success btn-lg mb-5 w-100 mt-3">Enviar</button>     
+        <button type="button" class="btn btn-success btn-lg mb-5 w-100 mt-3">Enviar Mensagem</button>     
       </form>
     </div>
   </div>
