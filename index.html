@@ -10,15 +10,15 @@
 <!-- Bootstrap  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!-- Bootstrap  ICON ?-->
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 <!-- CSS -->
-<link rel="stylesheet" href="./assets/style/estilos.css">
+    <link rel="stylesheet" href="./assets/style/estilos.css">
 </head>
 <body>
 
     <!-- HEADER -  <header>  logo? -->
-<header class="fixed-top bg-body-tertiary">
-    <nav class="navbar navbar-expand-lg">
+<header>
+    <nav class="navbar navbar-expand-lg bg-warning fixed-top border-bottom border-warning-subtle">
         <div class="container">
             <a class="navbar-brand logo-text text-success" href="#">Préa Limpo</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,13 +27,16 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
+                <a class="nav-link" aria-current="page" href="#">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#acoes">Ações</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#sobre">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#eventos">Eventos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contato">Contato</a>
@@ -47,12 +50,13 @@
 
 <!-- MAIN -  <main>  -->
 <main>
-   <!-- Section 1 - *INICIO* -->
-<section class="container mt-5" id="inicio">
+
+<!-- Section 1 *INÍCIO* -->
+<section class="container mt-5">
         
     <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-6">
-            <h1 class=" display-2 my-4">Bem-vindo ao Movimento Preá Limpo!</h1>
+            <h1 class=" display-2 my-4 fw-semibold">Bem-vindo ao Movimento Preá Limpo!</h1>
             <h3 class="mb-4">Inspirando mudanças e promovendo o respeito ao meio ambiente!</h3>                
         </div>
         <div class="col-lg-6 text-center">
@@ -63,9 +67,8 @@
 </section>
 <!-- FIM Section 1 -->
 
-
- <!-- Section 2 - Carousel -->
- <section class="mt-4" id="">
+<!-- Section 2 - *CAROUSEL AÇÕES* -->
+ <section class="mt-4" id="acoes">
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active "
@@ -84,9 +87,9 @@
           <img class="img-carousel img-fluid d-none d-xl-block" src="./assets/img/image-carousel.png"
             alt="descrição da imagem">                  
             <div class="carousel-caption p-2">
-              <h2 class="">AÇÕES COMUNITÁRIAS</h2>
-              <p class="subtitulo-Carousel">Organizamos mutirões de limpeza, construção de lixeiras e outras ações práticas que envolvem diretamente a comunidade.</p>
-              <a href="" class="btn btn-success btn-lg mb-5">Mais informações                     
+              <h2 class="mb-3">AÇÕES COMUNITÁRIAS</h2>
+              <p class="">Organizamos mutirões de limpeza, construção de lixeiras e outras ações práticas que envolvem diretamente a comunidade.</p>
+              <a href="#eventos" class="btn btn-success btn-lg mb-5">Próximos Eventos               
               </a>
             </div>            
         </div>
@@ -99,10 +102,9 @@
           <img class="img-carousel img-fluid d-none d-xl-block" src="./assets/img/image-carousel.png"
             alt="descrição da imagem">
           <div class="carousel-caption p-2">
-            <h2 class="">EDUCAÇÃO E CONSCIENTIZAÇÃO</h2>
-            <p class="subtitulo-Carousel">Realizamos diversas atividades educativas, como palestras, workshops sobre coleta seletiva e campanhas de conscientização.</p>
-            <a href="" class="btn btn-success btn-lg mb-5">Mais informações                     
-          </a>
+            <h2 class="mb-3">EDUCAÇÃO E CONSCIENTIZAÇÃO</h2>
+            <p class="">Realizamos diversas atividades educativas, como palestras, workshops sobre coleta seletiva e campanhas de conscientização.</p>
+            <a href="#coleta" class="btn btn-success btn-lg mb-5">Siga Nossas Orientações</a>
           </div>
         </div>
 
@@ -114,16 +116,16 @@
           <img class="img-carousel img-fluid d-none d-xl-block" src="./assets/img/image-carousel.png"
             alt="descrição da imagem">
           <div class="carousel-caption p-2">
-            <h2 class="">PARCERIAS E PATROCÍNIOS</h2>
-            <p class="subtitulo-Carousel">Buscamos parcerias com empresas locais e patrocinadores que compartilhem do nosso compromisso com a sustentabilidade.</p>
-            <a href="" class="btn btn-success btn-lg mb-5">Mais informações                     
+            <h2 class="mb-3">PARCERIAS E PATROCÍNIOS</h2>
+            <p class="">Buscamos parcerias com empresas locais e patrocinadores que compartilhem do nosso compromisso com a sustentabilidade.</p>
+            <a href="#contato" class="btn btn-success btn-lg mb-5">Faça Parte                     
           </a>
           </div>
         </div> 
       </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon m-5" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon m-4" aria-hidden="true"></span>
         <span class="visually-hidden">Anterior</span>
       </button>
       <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
@@ -134,33 +136,466 @@
     </div>
  </section>
 <!-- Fim Section 2 -->
-
    
-    <!-- Section 3 - *CONHEÇA O LIMPITO* -->
+<!-- Section 3 - *SOBRE* -->
+<section class="container my-5" id="sobre">
 
-    <section class="container mt-5" id="">
-        
-      
-
-  </section>
-
-    <!-- FIM Section 3 -->
-
-
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 m-0 pe-0">
+        <h4 class="display-4 my-4 fw-medium text-success">Sobre o Projeto</h4>
+        <p class="mb-5">Somos um grupo de moradores apaixonados pelo Preá, Ceará. Preocupados com o descarte inadequado de lixo na nossa cidade, nos unimos para criar um movimento comunitário dedicado a transformar essa realidade. <br> O Movimento Preá Limpo é uma iniciativa sem fins políticos ou lucrativos, movida pelo amor à nossa comunidade e pelo desejo de fazer a diferença.</p>
+        <a href="" class="btn btn-success btn-lg text-light mb-5">Seja Nosso Parceiro</a>                
+    </div>
    
 
+    <div class="col-lg-6 text-center m-0 p-3">
+      <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="./assets/img/image-section.png" class="d-block w-100" alt="descrição da imagem">
+              </div>
+              <div class="carousel-item active">
+                  <img src="./assets/img/image-section.png" class="d-block w-100" alt="descrição da imagem">
+              </div>
+              <div class="carousel-item active">
+                  <img src="./assets/img/image-section.png" class="d-block w-100" alt="descrição da imagem">
+              </div>
+          </div> 
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>              
+      </div>
+  </div>
+</div>
+
+  
+</div>
+           
+
+</section>
+<!-- FIM Section 3 -->
+
+<!-- Section 4 - *CONHEÇA O LIMPITO* -->
+<section class="bg-warning my-5 p-4" id="">  
+
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 text-center">
+      <img src="assets/img/image-section.png" alt="descrição da imagem" class="img-fluid">
+    </div>
+    <div class="col-lg-6">
+        <h4 class="display-4 my-4 fw-medium ">Conheça o Limpito</h4>
+        <p class="card-text ">Limpito, nosso mascote, é um adorável préa, animal que compartilha o nome da nossa cidade. Ele é o símbolo da nossa campanha, sempre presente para nos lembrar da importância de cuidarmos do nosso lar.</p>                  
+      </div>
+  </div>
+
+</section>
+<!-- FIM Section 4 -->
+
+<!-- Section 5 - *EVENTOS* -->       
+<section class="container my-5 p-4" id="eventos">    
+    <h3 class="text-center display-4 my-4 fw-medium text-success my-mt">Eventos e Reuniões</h3>
+    <p class="text-center mb-4">Fique por dentro dos nossos próximos eventos e reuniões comunitárias!<br>Participe e ajude a transformar nossa cidade.</p>
+
+    <div class="row d-flex align-items-center justify-content-center"> 
+
+        <div class="col-sm-6 col-lg-3 my-2">
+            <div class="card" >
+                <img src="./assets/img/image-section.png" class="card-img-top" alt="descrição da imagem" />
+                <div class="card-body">
+                    <h3 class="card-title text-center">Reunião</h3>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Data: 00/00/0000</li>
+                      <li class="list-group-item">Horário: 00:00</li>
+                      <li class="list-group-item">Descrição: Lorem ipsum dolor sit amet consectertur.</li>
+                    </ul>
+                   <div class="card-body">
+                      <a href="#" class="card-link">Detalhes</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-sm-6 col-lg-3 my-2">
+            <div class="card" >
+                <img src="./assets/img/image-section.png" class="card-img-top" alt="descrição da imagem" />
+                <div class="card-body">
+                    <h3 class="card-title text-center">Evento</h3>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Data: 00/00/0000</li>
+                      <li class="list-group-item">Horário: 00:00</li>
+                      <li class="list-group-item">Descrição: Lorem ipsum dolor sit amet consectertur.</li>
+                    </ul>
+                   <div class="card-body">
+                      <a href="#" class="card-link">Detalhes</a>
+                    </div>
+                    
+                </div>                
+            </div>
+        </div> 
+
+        <div class="col-sm-6 col-lg-3 my-2">
+            <div class="card" >
+                <img src="./assets/img/image-section.png" class="card-img-top" alt="descrição da imagem" />
+                <div class="card-body">
+                    <h3 class="card-title text-center">Reunião</h3>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Data: 00/00/0000</li>
+                      <li class="list-group-item">Horário: 00:00</li>
+                      <li class="list-group-item">Descrição: Lorem ipsum dolor sit amet consectertur.</li>
+                    </ul>
+                   <div class="card-body">
+                      <a href="#" class="card-link">Detalhes</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+
+        <div class="col-sm-6 col-lg-3 my-2">
+            <div class="card" >
+                <img src="./assets/img/image-section.png" class="card-img-top" alt="descrição da imagem" />
+                <div class="card-body">
+                    <h3 class="card-title text-center">Curso</h3>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Data: 00/00/0000</li>
+                      <li class="list-group-item">Horário: 00:00</li>
+                      <li class="list-group-item">Descrição: Lorem ipsum dolor sit amet consectertur.</li>
+                    </ul>
+                   <div class="card-body">
+                      <a href="#" class="card-link">Detalhes</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>            
+        <a href="#" class="btn btn-success my-3">Ver Todos os Eventos</a>
+    </div>      
+</section>  
+<!-- FIM Section 5 -->
+
+<!-- Section 6 - *COLETA SELETIVA* --> 
+<section class="bg-warning my-5 p-4" id="coleta">    
+  <h3 class="text-center display-4 my-4 fw-medium text-success my-mt">Como Realizar a Coleta Seletiva</h3>
+  <p class="text-center mb-4">Aprenda como separar e descartar seu lixo de forma correta.<br>A coleta seletiva é essencial para manter nossa cidade limpa e sustentável.</p>
+<!-- cards Modal -->
+<div class="container row mx-auto g-4 justify-content-center">
+
+  <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+    <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-1" style="width: 10rem;">
+      <img src="./assets/img/recycling.png" class="card-img-top" alt="Ícone Plástico">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Plásticos</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+    <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-2" style="width: 10rem;">
+      <img src="./assets/img/circular.png" class="card-img-top" alt="Ícone Papéis">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Papéis</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+     <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-3" style="width: 10rem;">
+      <img src="./assets/img/wine.png" class="card-img-top" alt="Ícone Vidro">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Vidros</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+     <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-4" style="width: 10rem;">
+      <img src="./assets/img/robotic.png" class="card-img-top" alt="Ícone Metal">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Metais</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+     <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-5" style="width: 10rem;">
+      <img src="./assets/img/eco.png" class="card-img-top" alt="Ícone orgânicos">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Orgânicos</h5>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-12 col-sm-6 col-lg-4 col-xl-2">
+     <div class="card border-0 mx-auto btn" data-bs-toggle="modal" data-bs-target="#modal-6" style="width: 10rem;">
+      <img src="./assets/img/syringe.png" class="card-img-top" alt="Ícone Hospitalar">
+      <div class="card-body">
+        <h5 class="card-text text-center fw-bold">Hospitalar</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- FIM Cards Modal-->
+</section>
+<!-- FIM Section 6 -->
+
+<!-- Section 7 - *CONTATO* --> 
+<section class="container my-5 p-4" id="contato"> 
+
+  <div class="row">
+    <div class="col-10 col-xl-8 mx-auto border border-2 rounded p-3">
+      <h3 class="text-center display-4 my-4 fw-medium text-success my-mt">Entre em Contato!</h3>
+      <p class="text-center mb-4">Quer fazer parte do Movimento Preá Limpo? <br> Preencha o formulário abaixo para se voluntariar, ou para que sua empresa possa contribuir com nosso projeto.</p>
+      <form id="contato">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingNome" placeholder="Nome Completo">
+          <label for="floatingNome" class="form-label">Nome Completo</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingAssunto" placeholder="Assunto">
+          <label for="floatingAssunto" class="form-label">Assunto</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail" class="form-label">Email</label>
+        </div>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="floatingTelefone" placeholder="(xx) 9999-9999">
+            <label for="floatingTelefone" class="form-label">Telefone</label>
+          </div>  
+        <select class="form-select mb-3" aria-label="Default select example">
+          <option selected>Preferência de contato:</option>
+          <option value="1">WhatsApp</option>
+          <option value="2">Email</option>
+          <option value="3">Ligação</option>
+        </select>        
+        <div class="form-check">
+          <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label " for="flexCheckDefault">
+            Deseja ser avisado sobre os próximos eventos por email?
+          </label>
+        </div>
+        <button type="button" class="btn btn-success btn-lg mb-5 w-100 mt-3">Enviar</button>     
+      </form>
+    </div>
+  </div>
+</section>
+<!-- FIM Section 7 -->
+
+<!-- Section 8 - *PONTO DE COLETA* -->
+<section class="bg-warning my-5 p-4" id="coleta">  
+
+  <div class="row d-flex justify-content-center align-items-center">
+    <div class="col-lg-6">
+      <h4 class="display-4 my-4 fw-medium">Pontos de Coleta</h4>
+      <p class="card-text">Confira no mapa os pontos de coleta seletiva distribuídos pela cidade de Preá. Descarte seu lixo corretamente e ajude a manter nossa cidade limpa!</p>  
+      <a href="" class="btn btn-success btn-lg text-light mb-5">Mapa Interativo dos Pontos de Coleta</a>                  
+    </div>
+    <div class="col-lg-6 text-center">
+      <img src="assets/img/image-section.png" alt="descrição da imagem" class="img-fluid">      
+    </div>
+  </div>
+
+</section>
+<!-- FIM Section 8 -->
+
+</main>
+<!-- FIM MAIN -  </main>  -->
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Plástico</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/recycling.png" class="w-50" alt="Ícone Plástico">
+           <p>Descarte garrafas, sacos e embalagens plásticas no recipiente azul.</p>          
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Papéis</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/circular.png" class="w-50" alt="Ícone Papéis">           
+           <p>Separe jornais, revistas e papelão para o recipiente vermelho.</p>           
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Vidros</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/wine.png" class="w-50" alt="Ícone Vidros">           
+           <p>Garrafas, potes e taças de vidro devem ser descartados no recipiente verde</p>           
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal-4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Metais</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/robotic.png" class="w-50" alt="Ícone Metais">           
+           <p>Latas de alumínio e outros metais vão para o recipiente amarelo.</p>           
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal fade" id="modal-5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Orgânicos</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/eco.png" class="w-50" alt="Ícone Orgânicos">           
+           <p>Restos de comida e resíduos orgânicos no recipiente marrom.</p>           
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal fade" id="modal-6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5 fw-bold" id="exampleModalLabel">Hospitalar</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+           <img src="./assets/img/syringe.png" class="w-50" alt="Ícone Hospitalar">           
+           <p>O descarte correto de seringas e outros materiais hospitalares, deve ser feito em unidades de saúde locais, como postos de saúde, hospitais, ou clínicas.</p>           
+          </div>
+          <div class="modal-footer mx-auto">
+            <button type="button" class="btn btn-success border-0" data-bs-dismiss="modal">Fechar Janela</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- FOOTER  -->   
+<!-- <footer class="text-center bg-black text-white">
+  <section class="container p-4 pb-0">
+    <a href=”#!” class="btn text-warning"><i class="bi bi-whatsapp"></i></a>
+    <a href=”#!” class="btn text-warning"><i class="bi bi-instagram"></i></a>
+    <a href=”#!” class="btn text-warning"><i class="bi bi-twitter"></i></a>
+    <div class="p-3">
+      2024 - Desenvolvido pelos alunos:  | Projeto sem fins comerciais.
+    </div>
+</footer> -->
 
 
-  </main>
-    <!-- FIM MAIN -  </main>  -->
+<footer class="footer text-center text-lg-start bg-warning text-dark">
+  <div class="container p-4">
+      <div class="row">
+          <!-- Links de Navegação -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-success">Navegação</h5>
+              <ul class="list-unstyled mb-0">
+                  <li>
+                      <a href="#" class="text-dark">Início</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-dark">Contato</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-dark">Cursos sobre Reutilização de Materiais</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-dark">Política de Privacidade</a>
+                  </li>
+                  <li>
+                      <a href="#" class="text-dark">Termos de Uso</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- Informações de Contato -->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-success">Contato</h5>
+              <ul class="list-unstyled mb-0">
+                  <li>
+                    <i class="bi bi-envelope-fill"></i> <a href="mailto:contato@prealimpo.org" class="text-dark">contato@prealimpo.org</a>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone-fill"></i> (XX) XXXX-XXXX
+                  </li>
+                  <li>
+                    <i class="bi bi-geo-alt-fill"></i> Rua Limpa, 456, Preá, CE
+                  </li>
+              </ul>
+          </div>
+          <!-- Redes Sociais -->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-success">Redes Sociais</h5>
+              <a href="#" class="btn text-dark"><i class="bi bi-whatsapp"></i></a>
+              <a href="#" class="btn text-dark"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="btn text-dark"><i class="bi bi-twitter"></i></a>
+          </div>
+      </div>
+  </div>
+  <div class="text-center p-3">
+      2024 - Desenvolvido pelos alunos: | Projeto sem fins comerciais.
+  </div>
+</footer>
+<!-- FIM FOOTER  -->
 
-
-    
-    <footer class="text-center bg-black text-bg-dark">
-        <p class="card-text py-3">2024 <i class="bi bi-c-circle"></i> - FOOTER </p>
-      </footer>
-
-      <!-- Bootstrap -->
+<!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
